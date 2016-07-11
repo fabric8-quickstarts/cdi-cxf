@@ -1,6 +1,6 @@
 # CDI CXF QuickStart
 
-This quick start demonstrates how to create a RESTful (JAX-RS) web service using Apache CXF and expose it using CDI running in a Java standalone container.
+This quick start demonstrates how to create a RESTful (JAX-RS) web service using Apache CXF and expose it using CDI running in a stand alone Java applicaiton.
 
 The REST service provides a customer service that supports the following operations
  
@@ -33,7 +33,7 @@ It is assumed a running Kubernetes platform is already running and that you will
 
 The example can be built and deployed using a single goal:
 
-    mvn -Pf8-local-deploy
+    mvn fabric8:run
 
 When the example runs in fabric8, you can use the OpenShift client tool to inspect the status at the condition to be connected to the OpenShift platform `oc login`
 
