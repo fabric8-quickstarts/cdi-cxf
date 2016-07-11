@@ -27,7 +27,7 @@ The example can be run locally using the following Maven goal:
     mvn clean install exec:java
 
 
-### Running the example in fabric8
+### Running the example in Kubernetes
 
 It is assumed a running Kubernetes platform is already running and that you will deploy the microservice within the `default` namespace. If not you can find details how to [get started](http://fabric8.io/guide/getStarted/index.html).
 
