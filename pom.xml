@@ -43,11 +43,12 @@
 
 
     <!-- maven plugin versions -->
+    <cxf.plugin.version>3.1.4</cxf.plugin.version>
+    <exec-maven-plugin.version>1.4.0</exec-maven-plugin.version>
     <fabric8.maven.plugin.version>3.0.26</fabric8.maven.plugin.version>
     <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
+    <maven-resources-plugin.version>2.7</maven-resources-plugin.version>
     <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
-    <exec-maven-plugin.version>1.4.0</exec-maven-plugin.version>
-    <cxf.plugin.version>3.1.4</cxf.plugin.version>
   </properties>
 
   <dependencyManagement>
@@ -318,7 +319,6 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -366,7 +366,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
-        <version>2.7</version>
+        <version>${maven-resources-plugin.version}</version>
         <executions>
           <execution>
             <id>filter</id>
