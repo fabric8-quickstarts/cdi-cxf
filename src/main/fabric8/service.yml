@@ -1,4 +1,6 @@
 metadata:
+  labels:
+    expose: true
   annotations:
     apiman.io/publish: "publish"
     api.service.kubernetes.io/description-language: "SwaggerJSON"
@@ -11,4 +13,3 @@ spec:
   ports:
     - port: 80
       targetPort: 8080
-  type: LoadBalancer
