@@ -36,7 +36,7 @@
     <cxf.version>3.1.7</cxf.version>
     <fabric8.version>2.2.178</fabric8.version>
     <jackson.version>2.8.3</jackson.version>
-    <jetty-version>9.2.10.v20150310</jetty-version>
+    <jetty-version>9.2.19.v20160908</jetty-version>
     <junit.version>4.12</junit.version>
     <weld.version>2.3.3.Final</weld.version>
     <slf4j-version>1.7.12</slf4j-version>
