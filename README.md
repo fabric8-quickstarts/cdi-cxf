@@ -95,6 +95,15 @@ You can use a command-line utility, such as cURL or wget, to perform the HTTP re
              curl -X DELETE http://cdi-cxf-default.vagrant.f8/cxfcdi/customerservice/customers/123
 
 
+#### Integration Testing
+
+The example includes a [fabric8 arquillian](https://github.com/fabric8io/fabric8/tree/master/components/fabric8-arquillian) Kubernetes Integration Test. 
+Once the container image has been built and deployed in Kubernetes, the integration test can be run with:
+
+	mvn test -Dtest=*KT
+
+The test is disabled by default and has to be enabled using `-Dtest`. [Integration Testing](https://fabric8.io/guide/testing.html) and [Fabric8 Arquillian Extension](https://fabric8.io/guide/arquillian.html) provide more information on writing full fledged black box integration tests for Kubernetes. 
+
 ### More details
 
 You can find more details about running this [quickstart](http://fabric8.io/guide/quickstarts/running.html) on the website. This also includes instructions how to change the Docker image user and registry.
